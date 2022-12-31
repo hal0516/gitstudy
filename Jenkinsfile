@@ -13,9 +13,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Build2') {
       steps {
-        build 'gitstudy'
+        build 'gitstudy/develop'
       }
     }
 
