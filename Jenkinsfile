@@ -10,7 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'hello'
-        archiveArtifacts artifacts: '**/*.tar', followSymlinks: false
+        archiveArtifacts artifacts: '**/**', followSymlinks: false, onlyIfSuccessful: true
       }
     }
 
