@@ -10,12 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'hello'
-      }
-    }
-
-    stage('Build2') {
-      steps {
-        build 'gitstudy/develop'
+        archiveArtifacts artifacts: '**/*.tar', followSymlinks: false
       }
     }
 
