@@ -10,7 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'hello'
-        archiveArtifacts artifacts: '**/**', followSymlinks: false, onlyIfSuccessful: true
+        archiveArtifacts artifacts: 'aaa', followSymlinks: false, onlyIfSuccessful: true
       }
     }
 
